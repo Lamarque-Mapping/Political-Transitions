@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "release": "S012",
+  "checks": [
+    "Export hashes and byte lengths",
+    "Separate units, stable IDs and country references",
+    "Date precision, null exact dates and interval bounds",
+    "Country coverage, no-transition flags, chain totals and open questions",
+    "Annual counts keep cross-year intervals unassigned",
+    "Sensitivity alternatives reconcile by stable-ID set subtraction",
+    "CSV downloads preserve record counts and source URLs"
+  ],
+  "counts": {
+    "handovers": 686,
+    "collectiveChanges": 105,
+    "countries": 197,
+    "fullWindow": 176,
+    "partial": 21,
+    "verifiedNoTransition": 12,
+    "openQuestions": 43,
+    "annualUnassigned": 3
+  }
+}

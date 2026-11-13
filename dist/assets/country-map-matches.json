@@ -1,0 +1,1381 @@
+[
+  {
+    "code": "DZA",
+    "name": "Algeria",
+    "mapCode": "DZA",
+    "lat": 27.397406,
+    "lon": 2.808241
+  },
+  {
+    "code": "AGO",
+    "name": "Angola",
+    "mapCode": "AGO",
+    "lat": -12.182762,
+    "lon": 17.984249
+  },
+  {
+    "code": "BEN",
+    "name": "Benin",
+    "mapCode": "BEN",
+    "lat": 10.324775,
+    "lon": 2.352018
+  },
+  {
+    "code": "BWA",
+    "name": "Botswana",
+    "mapCode": "BWA",
+    "lat": -22.102634,
+    "lon": 24.179216
+  },
+  {
+    "code": "BFA",
+    "name": "Burkina Faso",
+    "mapCode": "BFA",
+    "lat": 12.673048,
+    "lon": -1.36388
+  },
+  {
+    "code": "BDI",
+    "name": "Burundi",
+    "mapCode": "BDI",
+    "lat": -3.332836,
+    "lon": 29.917086
+  },
+  {
+    "code": "CPV",
+    "name": "Cabo Verde",
+    "mapCode": "CPV",
+    "lat": 15.074761,
+    "lon": -23.639434
+  },
+  {
+    "code": "CMR",
+    "name": "Cameroon",
+    "mapCode": "CMR",
+    "lat": 4.585041,
+    "lon": 12.473488
+  },
+  {
+    "code": "CAF",
+    "name": "Central African Republic",
+    "mapCode": "CAF",
+    "lat": 6.989681,
+    "lon": 20.906897
+  },
+  {
+    "code": "TCD",
+    "name": "Chad",
+    "mapCode": "TCD",
+    "lat": 15.142959,
+    "lon": 18.645041
+  },
+  {
+    "code": "COM",
+    "name": "Comoros",
+    "mapCode": "COM",
+    "lat": -11.727683,
+    "lon": 43.318094
+  },
+  {
+    "code": "COG",
+    "name": "Congo",
+    "mapCode": "COG",
+    "lat": 0.142331,
+    "lon": 15.9005
+  },
+  {
+    "code": "CIV",
+    "name": "C\u00f4te d'Ivoire",
+    "mapCode": "CIV",
+    "lat": 7.49139,
+    "lon": -5.568618
+  },
+  {
+    "code": "COD",
+    "name": "Democratic Republic of the Congo",
+    "mapCode": "COD",
+    "lat": -1.858167,
+    "lon": 23.458829
+  },
+  {
+    "code": "DJI",
+    "name": "Djibouti",
+    "mapCode": "DJI",
+    "lat": 11.976343,
+    "lon": 42.498825
+  },
+  {
+    "code": "EGY",
+    "name": "Egypt",
+    "mapCode": "EGY",
+    "lat": 26.186173,
+    "lon": 29.445837
+  },
+  {
+    "code": "GNQ",
+    "name": "Equatorial Guinea",
+    "mapCode": "GNQ",
+    "lat": 2.333,
+    "lon": 8.9902
+  },
+  {
+    "code": "ERI",
+    "name": "Eritrea",
+    "mapCode": "ERI",
+    "lat": 15.787401,
+    "lon": 38.285566
+  },
+  {
+    "code": "SWZ",
+    "name": "Eswatini",
+    "mapCode": "SWZ",
+    "lat": -26.533676,
+    "lon": 31.467264
+  },
+  {
+    "code": "ETH",
+    "name": "Ethiopia",
+    "mapCode": "ETH",
+    "lat": 8.032795,
+    "lon": 39.0886
+  },
+  {
+    "code": "GAB",
+    "name": "Gabon",
+    "mapCode": "GAB",
+    "lat": -0.437739,
+    "lon": 11.835939
+  },
+  {
+    "code": "GMB",
+    "name": "Gambia",
+    "mapCode": "GMB",
+    "lat": 13.641721,
+    "lon": -14.998318
+  },
+  {
+    "code": "GHA",
+    "name": "Ghana",
+    "mapCode": "GHA",
+    "lat": 7.717639,
+    "lon": -1.036941
+  },
+  {
+    "code": "GIN",
+    "name": "Guinea",
+    "mapCode": "GIN",
+    "lat": 10.618516,
+    "lon": -10.016402
+  },
+  {
+    "code": "GNB",
+    "name": "Guinea-Bissau",
+    "mapCode": "GNB",
+    "lat": 12.163712,
+    "lon": -14.52413
+  },
+  {
+    "code": "KEN",
+    "name": "Kenya",
+    "mapCode": "KEN",
+    "lat": 0.549043,
+    "lon": 37.907632
+  },
+  {
+    "code": "LSO",
+    "name": "Lesotho",
+    "mapCode": "LSO",
+    "lat": -29.480158,
+    "lon": 28.246639
+  },
+  {
+    "code": "LBR",
+    "name": "Liberia",
+    "mapCode": "LBR",
+    "lat": 6.447177,
+    "lon": -9.460379
+  },
+  {
+    "code": "LBY",
+    "name": "Libya",
+    "mapCode": "LBY",
+    "lat": 26.638944,
+    "lon": 18.011015
+  },
+  {
+    "code": "MDG",
+    "name": "Madagascar",
+    "mapCode": "MDG",
+    "lat": -18.628288,
+    "lon": 46.704241
+  },
+  {
+    "code": "MWI",
+    "name": "Malawi",
+    "mapCode": "MWI",
+    "lat": -13.386737,
+    "lon": 33.608082
+  },
+  {
+    "code": "MLI",
+    "name": "Mali",
+    "mapCode": "MLI",
+    "lat": 18.692713,
+    "lon": -2.038455
+  },
+  {
+    "code": "MRT",
+    "name": "Mauritania",
+    "mapCode": "MRT",
+    "lat": 19.587062,
+    "lon": -9.740299
+  },
+  {
+    "code": "MUS",
+    "name": "Mauritius",
+    "mapCode": "MUS",
+    "lat": -20.299506,
+    "lon": 57.565848
+  },
+  {
+    "code": "MAR",
+    "name": "Morocco",
+    "mapCode": "MAR",
+    "lat": 31.650723,
+    "lon": -7.187296
+  },
+  {
+    "code": "MOZ",
+    "name": "Mozambique",
+    "mapCode": "MOZ",
+    "lat": -13.94323,
+    "lon": 37.83789
+  },
+  {
+    "code": "NAM",
+    "name": "Namibia",
+    "mapCode": "NAM",
+    "lat": -20.575298,
+    "lon": 17.108166
+  },
+  {
+    "code": "NER",
+    "name": "Niger",
+    "mapCode": "NER",
+    "lat": 17.446195,
+    "lon": 9.504356
+  },
+  {
+    "code": "NGA",
+    "name": "Nigeria",
+    "mapCode": "NGA",
+    "lat": 9.439799,
+    "lon": 7.50322
+  },
+  {
+    "code": "RWA",
+    "name": "Rwanda",
+    "mapCode": "RWA",
+    "lat": -1.897196,
+    "lon": 30.103894
+  },
+  {
+    "code": "STP",
+    "name": "Sao Tome and Principe",
+    "mapCode": "STP",
+    "lat": 0.9709,
+    "lon": 7.021
+  },
+  {
+    "code": "SEN",
+    "name": "Senegal",
+    "mapCode": "SEN",
+    "lat": 15.138125,
+    "lon": -14.778586
+  },
+  {
+    "code": "SYC",
+    "name": "Seychelles",
+    "mapCode": "SYC",
+    "lat": -4.676659,
+    "lon": 55.480175
+  },
+  {
+    "code": "SLE",
+    "name": "Sierra Leone",
+    "mapCode": "SLE",
+    "lat": 8.617449,
+    "lon": -11.763677
+  },
+  {
+    "code": "SOM",
+    "name": "Somalia",
+    "mapCode": "SOM",
+    "lat": 3.568925,
+    "lon": 45.19238
+  },
+  {
+    "code": "ZAF",
+    "name": "South Africa",
+    "mapCode": "ZAF",
+    "lat": -29.708776,
+    "lon": 23.665734
+  },
+  {
+    "code": "SSD",
+    "name": "South Sudan",
+    "mapCode": "SDS",
+    "lat": 7.230477,
+    "lon": 30.390151
+  },
+  {
+    "code": "SDN",
+    "name": "Sudan",
+    "mapCode": "SDN",
+    "lat": 16.330746,
+    "lon": 29.260657
+  },
+  {
+    "code": "TGO",
+    "name": "Togo",
+    "mapCode": "TGO",
+    "lat": 8.80722,
+    "lon": 1.058113
+  },
+  {
+    "code": "TUN",
+    "name": "Tunisia",
+    "mapCode": "TUN",
+    "lat": 33.687263,
+    "lon": 9.007881
+  },
+  {
+    "code": "UGA",
+    "name": "Uganda",
+    "mapCode": "UGA",
+    "lat": 1.972589,
+    "lon": 32.948555
+  },
+  {
+    "code": "TZA",
+    "name": "United Republic of Tanzania",
+    "mapCode": "TZA",
+    "lat": -6.051866,
+    "lon": 34.959183
+  },
+  {
+    "code": "ZMB",
+    "name": "Zambia",
+    "mapCode": "ZMB",
+    "lat": -14.660804,
+    "lon": 26.395298
+  },
+  {
+    "code": "ZWE",
+    "name": "Zimbabwe",
+    "mapCode": "ZWE",
+    "lat": -18.91164,
+    "lon": 29.925444
+  },
+  {
+    "code": "AFG",
+    "name": "Afghanistan",
+    "mapCode": "AFG",
+    "lat": 34.164262,
+    "lon": 66.496586
+  },
+  {
+    "code": "ARM",
+    "name": "Armenia",
+    "mapCode": "ARM",
+    "lat": 40.459077,
+    "lon": 44.800564
+  },
+  {
+    "code": "AZE",
+    "name": "Azerbaijan",
+    "mapCode": "AZE",
+    "lat": 40.402387,
+    "lon": 47.210994
+  },
+  {
+    "code": "BHR",
+    "name": "Bahrain",
+    "mapCode": "BHR",
+    "lat": 26.055972,
+    "lon": 50.554816
+  },
+  {
+    "code": "BGD",
+    "name": "Bangladesh",
+    "mapCode": "BGD",
+    "lat": 24.214956,
+    "lon": 89.684963
+  },
+  {
+    "code": "BTN",
+    "name": "Bhutan",
+    "mapCode": "BTN",
+    "lat": 27.536685,
+    "lon": 90.040294
+  },
+  {
+    "code": "BRN",
+    "name": "Brunei Darussalam",
+    "mapCode": "BRN",
+    "lat": 4.448298,
+    "lon": 114.551943
+  },
+  {
+    "code": "KHM",
+    "name": "Cambodia",
+    "mapCode": "KHM",
+    "lat": 12.647584,
+    "lon": 104.50487
+  },
+  {
+    "code": "CHN",
+    "name": "China",
+    "mapCode": "CHN",
+    "lat": 32.498178,
+    "lon": 106.337289
+  },
+  {
+    "code": "CYP",
+    "name": "Cyprus",
+    "mapCode": "CYP",
+    "lat": 34.913329,
+    "lon": 33.084182
+  },
+  {
+    "code": "PRK",
+    "name": "Democratic People's Republic of Korea",
+    "mapCode": "PRK",
+    "lat": 39.885252,
+    "lon": 126.444516
+  },
+  {
+    "code": "GEO",
+    "name": "Georgia",
+    "mapCode": "GEO",
+    "lat": 41.870087,
+    "lon": 43.735724
+  },
+  {
+    "code": "IND",
+    "name": "India",
+    "mapCode": "IND",
+    "lat": 22.686852,
+    "lon": 79.358105
+  },
+  {
+    "code": "IDN",
+    "name": "Indonesia",
+    "mapCode": "IDN",
+    "lat": -0.954404,
+    "lon": 101.892949
+  },
+  {
+    "code": "IRN",
+    "name": "Iran (Islamic Republic of)",
+    "mapCode": "IRN",
+    "lat": 32.166225,
+    "lon": 54.931495
+  },
+  {
+    "code": "IRQ",
+    "name": "Iraq",
+    "mapCode": "IRQ",
+    "lat": 33.09403,
+    "lon": 43.26181
+  },
+  {
+    "code": "ISR",
+    "name": "Israel",
+    "mapCode": "ISR",
+    "lat": 30.911148,
+    "lon": 34.847915
+  },
+  {
+    "code": "JPN",
+    "name": "Japan",
+    "mapCode": "JPN",
+    "lat": 36.142538,
+    "lon": 138.44217
+  },
+  {
+    "code": "JOR",
+    "name": "Jordan",
+    "mapCode": "JOR",
+    "lat": 30.805025,
+    "lon": 36.375991
+  },
+  {
+    "code": "KAZ",
+    "name": "Kazakhstan",
+    "mapCode": "KAZ",
+    "lat": 49.054149,
+    "lon": 68.685548
+  },
+  {
+    "code": "KWT",
+    "name": "Kuwait",
+    "mapCode": "KWT",
+    "lat": 29.413628,
+    "lon": 47.313999
+  },
+  {
+    "code": "KGZ",
+    "name": "Kyrgyzstan",
+    "mapCode": "KGZ",
+    "lat": 41.66854,
+    "lon": 74.532637
+  },
+  {
+    "code": "LAO",
+    "name": "Lao People's Democratic Republic",
+    "mapCode": "LAO",
+    "lat": 19.431821,
+    "lon": 102.533912
+  },
+  {
+    "code": "LBN",
+    "name": "Lebanon",
+    "mapCode": "LBN",
+    "lat": 34.133368,
+    "lon": 35.992892
+  },
+  {
+    "code": "MYS",
+    "name": "Malaysia",
+    "mapCode": "MYS",
+    "lat": 2.528667,
+    "lon": 113.83708
+  },
+  {
+    "code": "MDV",
+    "name": "Maldives",
+    "mapCode": "MDV",
+    "lat": 4.174441,
+    "lon": 73.507554
+  },
+  {
+    "code": "MNG",
+    "name": "Mongolia",
+    "mapCode": "MNG",
+    "lat": 45.997488,
+    "lon": 104.150405
+  },
+  {
+    "code": "MMR",
+    "name": "Myanmar",
+    "mapCode": "MMR",
+    "lat": 21.573855,
+    "lon": 95.804497
+  },
+  {
+    "code": "NPL",
+    "name": "Nepal",
+    "mapCode": "NPL",
+    "lat": 28.297925,
+    "lon": 83.639914
+  },
+  {
+    "code": "OMN",
+    "name": "Oman",
+    "mapCode": "OMN",
+    "lat": 22.120427,
+    "lon": 57.336553
+  },
+  {
+    "code": "PAK",
+    "name": "Pakistan",
+    "mapCode": "PAK",
+    "lat": 29.328389,
+    "lon": 68.545632
+  },
+  {
+    "code": "PHL",
+    "name": "Philippines",
+    "mapCode": "PHL",
+    "lat": 11.198,
+    "lon": 122.465
+  },
+  {
+    "code": "QAT",
+    "name": "Qatar",
+    "mapCode": "QAT",
+    "lat": 25.237383,
+    "lon": 51.143509
+  },
+  {
+    "code": "KOR",
+    "name": "Republic of Korea",
+    "mapCode": "KOR",
+    "lat": 36.384924,
+    "lon": 128.129504
+  },
+  {
+    "code": "SAU",
+    "name": "Saudi Arabia",
+    "mapCode": "SAU",
+    "lat": 23.806908,
+    "lon": 44.6996
+  },
+  {
+    "code": "SGP",
+    "name": "Singapore",
+    "mapCode": "SGP",
+    "lat": 1.366587,
+    "lon": 103.816925
+  },
+  {
+    "code": "LKA",
+    "name": "Sri Lanka",
+    "mapCode": "LKA",
+    "lat": 7.581097,
+    "lon": 80.704823
+  },
+  {
+    "code": "PSE",
+    "name": "State of Palestine",
+    "mapCode": "PSX",
+    "lat": 32.047431,
+    "lon": 35.291341
+  },
+  {
+    "code": "SYR",
+    "name": "Syrian Arab Republic",
+    "mapCode": "SYR",
+    "lat": 35.006636,
+    "lon": 38.277783
+  },
+  {
+    "code": "TWN",
+    "name": "Taiwan",
+    "mapCode": "TWN",
+    "lat": 23.652408,
+    "lon": 120.868204
+  },
+  {
+    "code": "TJK",
+    "name": "Tajikistan",
+    "mapCode": "TJK",
+    "lat": 38.199835,
+    "lon": 72.587276
+  },
+  {
+    "code": "THA",
+    "name": "Thailand",
+    "mapCode": "THA",
+    "lat": 15.45974,
+    "lon": 101.073198
+  },
+  {
+    "code": "TLS",
+    "name": "Timor-Leste",
+    "mapCode": "TLS",
+    "lat": -8.803705,
+    "lon": 125.854679
+  },
+  {
+    "code": "TKM",
+    "name": "Turkmenistan",
+    "mapCode": "TKM",
+    "lat": 39.855246,
+    "lon": 58.676647
+  },
+  {
+    "code": "TUR",
+    "name": "T\u00fcrkiye",
+    "mapCode": "TUR",
+    "lat": 39.345388,
+    "lon": 34.508268
+  },
+  {
+    "code": "ARE",
+    "name": "United Arab Emirates",
+    "mapCode": "ARE",
+    "lat": 23.466285,
+    "lon": 54.547256
+  },
+  {
+    "code": "UZB",
+    "name": "Uzbekistan",
+    "mapCode": "UZB",
+    "lat": 41.693603,
+    "lon": 64.005429
+  },
+  {
+    "code": "VNM",
+    "name": "Viet Nam",
+    "mapCode": "VNM",
+    "lat": 21.715416,
+    "lon": 105.387292
+  },
+  {
+    "code": "YEM",
+    "name": "Yemen",
+    "mapCode": "YEM",
+    "lat": 15.328226,
+    "lon": 45.874383
+  },
+  {
+    "code": "ALB",
+    "name": "Albania",
+    "mapCode": "ALB",
+    "lat": 40.654855,
+    "lon": 20.11384
+  },
+  {
+    "code": "AND",
+    "name": "Andorra",
+    "mapCode": "AND",
+    "lat": 42.547643,
+    "lon": 1.539409
+  },
+  {
+    "code": "AUT",
+    "name": "Austria",
+    "mapCode": "AUT",
+    "lat": 47.518859,
+    "lon": 14.130515
+  },
+  {
+    "code": "BLR",
+    "name": "Belarus",
+    "mapCode": "BLR",
+    "lat": 53.821888,
+    "lon": 28.417701
+  },
+  {
+    "code": "BEL",
+    "name": "Belgium",
+    "mapCode": "BEL",
+    "lat": 50.785392,
+    "lon": 4.800448
+  },
+  {
+    "code": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "mapCode": "BIH",
+    "lat": 44.091051,
+    "lon": 18.06841
+  },
+  {
+    "code": "BGR",
+    "name": "Bulgaria",
+    "mapCode": "BGR",
+    "lat": 42.508785,
+    "lon": 25.15709
+  },
+  {
+    "code": "HRV",
+    "name": "Croatia",
+    "mapCode": "HRV",
+    "lat": 45.805799,
+    "lon": 16.37241
+  },
+  {
+    "code": "CZE",
+    "name": "Czechia",
+    "mapCode": "CZE",
+    "lat": 49.882364,
+    "lon": 15.377555
+  },
+  {
+    "code": "DNK",
+    "name": "Denmark",
+    "mapCode": "DNK",
+    "lat": 55.966965,
+    "lon": 9.018163
+  },
+  {
+    "code": "EST",
+    "name": "Estonia",
+    "mapCode": "EST",
+    "lat": 58.724865,
+    "lon": 25.867126
+  },
+  {
+    "code": "FIN",
+    "name": "Finland",
+    "mapCode": "FIN",
+    "lat": 63.252361,
+    "lon": 27.276449
+  },
+  {
+    "code": "FRA",
+    "name": "France",
+    "mapCode": "FRA",
+    "lat": 46.696113,
+    "lon": 2.552275
+  },
+  {
+    "code": "DEU",
+    "name": "Germany",
+    "mapCode": "DEU",
+    "lat": 50.961733,
+    "lon": 9.678348
+  },
+  {
+    "code": "GRC",
+    "name": "Greece",
+    "mapCode": "GRC",
+    "lat": 39.492763,
+    "lon": 21.72568
+  },
+  {
+    "code": "VAT",
+    "name": "Holy See",
+    "mapCode": "VAT",
+    "lat": 41.903323,
+    "lon": 12.453418
+  },
+  {
+    "code": "HUN",
+    "name": "Hungary",
+    "mapCode": "HUN",
+    "lat": 47.086841,
+    "lon": 19.447867
+  },
+  {
+    "code": "ISL",
+    "name": "Iceland",
+    "mapCode": "ISL",
+    "lat": 64.779286,
+    "lon": -18.673711
+  },
+  {
+    "code": "IRL",
+    "name": "Ireland",
+    "mapCode": "IRL",
+    "lat": 53.078726,
+    "lon": -7.798588
+  },
+  {
+    "code": "ITA",
+    "name": "Italy",
+    "mapCode": "ITA",
+    "lat": 44.732482,
+    "lon": 11.076907
+  },
+  {
+    "code": "XKX",
+    "name": "Kosovo",
+    "mapCode": "KOS",
+    "lat": 42.593587,
+    "lon": 20.860719
+  },
+  {
+    "code": "LVA",
+    "name": "Latvia",
+    "mapCode": "LVA",
+    "lat": 57.066872,
+    "lon": 25.458723
+  },
+  {
+    "code": "LIE",
+    "name": "Liechtenstein",
+    "mapCode": "LIE",
+    "lat": 47.111405,
+    "lon": 9.559439
+  },
+  {
+    "code": "LTU",
+    "name": "Lithuania",
+    "mapCode": "LTU",
+    "lat": 55.103703,
+    "lon": 24.089932
+  },
+  {
+    "code": "LUX",
+    "name": "Luxembourg",
+    "mapCode": "LUX",
+    "lat": 49.733732,
+    "lon": 6.07762
+  },
+  {
+    "code": "MLT",
+    "name": "Malta",
+    "mapCode": "MLT",
+    "lat": 35.892886,
+    "lon": 14.433005
+  },
+  {
+    "code": "MCO",
+    "name": "Monaco",
+    "mapCode": "MCO",
+    "lat": 43.739652,
+    "lon": 7.398291
+  },
+  {
+    "code": "MNE",
+    "name": "Montenegro",
+    "mapCode": "MNE",
+    "lat": 42.803101,
+    "lon": 19.143727
+  },
+  {
+    "code": "NLD",
+    "name": "Netherlands (Kingdom of the)",
+    "mapCode": "NLD",
+    "lat": 52.422211,
+    "lon": 5.61144
+  },
+  {
+    "code": "MKD",
+    "name": "North Macedonia",
+    "mapCode": "MKD",
+    "lat": 41.558223,
+    "lon": 21.555839
+  },
+  {
+    "code": "NOR",
+    "name": "Norway",
+    "mapCode": "NOR",
+    "lat": 61.357092,
+    "lon": 9.679975
+  },
+  {
+    "code": "POL",
+    "name": "Poland",
+    "mapCode": "POL",
+    "lat": 51.990316,
+    "lon": 19.490468
+  },
+  {
+    "code": "PRT",
+    "name": "Portugal",
+    "mapCode": "PRT",
+    "lat": 39.606675,
+    "lon": -8.271754
+  },
+  {
+    "code": "MDA",
+    "name": "Republic of Moldova",
+    "mapCode": "MDA",
+    "lat": 47.434999,
+    "lon": 28.487904
+  },
+  {
+    "code": "ROU",
+    "name": "Romania",
+    "mapCode": "ROU",
+    "lat": 45.733237,
+    "lon": 24.972624
+  },
+  {
+    "code": "RUS",
+    "name": "Russian Federation",
+    "mapCode": "RUS",
+    "lat": 58.249357,
+    "lon": 44.686469
+  },
+  {
+    "code": "SMR",
+    "name": "San Marino",
+    "mapCode": "SMR",
+    "lat": 43.933916,
+    "lon": 12.441206
+  },
+  {
+    "code": "SRB",
+    "name": "Serbia",
+    "mapCode": "SRB",
+    "lat": 44.189919,
+    "lon": 20.787989
+  },
+  {
+    "code": "SVK",
+    "name": "Slovakia",
+    "mapCode": "SVK",
+    "lat": 48.734044,
+    "lon": 19.049868
+  },
+  {
+    "code": "SVN",
+    "name": "Slovenia",
+    "mapCode": "SVN",
+    "lat": 46.06076,
+    "lon": 14.915312
+  },
+  {
+    "code": "ESP",
+    "name": "Spain",
+    "mapCode": "ESP",
+    "lat": 40.090953,
+    "lon": -3.464718
+  },
+  {
+    "code": "SWE",
+    "name": "Sweden",
+    "mapCode": "SWE",
+    "lat": 65.85918,
+    "lon": 19.01705
+  },
+  {
+    "code": "CHE",
+    "name": "Switzerland",
+    "mapCode": "CHE",
+    "lat": 46.719114,
+    "lon": 7.463965
+  },
+  {
+    "code": "UKR",
+    "name": "Ukraine",
+    "mapCode": "UKR",
+    "lat": 49.724739,
+    "lon": 32.140865
+  },
+  {
+    "code": "GBR",
+    "name": "United Kingdom",
+    "mapCode": "GBR",
+    "lat": 54.402739,
+    "lon": -2.116346
+  },
+  {
+    "code": "ATG",
+    "name": "Antigua and Barbuda",
+    "mapCode": "ATG",
+    "lat": 17.352249,
+    "lon": -61.790612
+  },
+  {
+    "code": "ARG",
+    "name": "Argentina",
+    "mapCode": "ARG",
+    "lat": -33.501159,
+    "lon": -64.173331
+  },
+  {
+    "code": "BRB",
+    "name": "Barbados",
+    "mapCode": "BRB",
+    "lat": 13.163709,
+    "lon": -59.568966
+  },
+  {
+    "code": "BLZ",
+    "name": "Belize",
+    "mapCode": "BLZ",
+    "lat": 17.202068,
+    "lon": -88.712962
+  },
+  {
+    "code": "BOL",
+    "name": "Bolivia (Plurinational State of)",
+    "mapCode": "BOL",
+    "lat": -16.666015,
+    "lon": -64.593433
+  },
+  {
+    "code": "BRA",
+    "name": "Brazil",
+    "mapCode": "BRA",
+    "lat": -12.098687,
+    "lon": -49.55945
+  },
+  {
+    "code": "CHL",
+    "name": "Chile",
+    "mapCode": "CHL",
+    "lat": -38.151771,
+    "lon": -72.318871
+  },
+  {
+    "code": "COL",
+    "name": "Colombia",
+    "mapCode": "COL",
+    "lat": 3.373111,
+    "lon": -73.174347
+  },
+  {
+    "code": "CRI",
+    "name": "Costa Rica",
+    "mapCode": "CRI",
+    "lat": 10.0651,
+    "lon": -84.077922
+  },
+  {
+    "code": "CUB",
+    "name": "Cuba",
+    "mapCode": "CUB",
+    "lat": 21.334024,
+    "lon": -77.975855
+  },
+  {
+    "code": "DMA",
+    "name": "Dominica",
+    "mapCode": "DMA",
+    "lat": 15.458829,
+    "lon": -61.344958
+  },
+  {
+    "code": "DOM",
+    "name": "Dominican Republic",
+    "mapCode": "DOM",
+    "lat": 19.104137,
+    "lon": -70.653998
+  },
+  {
+    "code": "ECU",
+    "name": "Ecuador",
+    "mapCode": "ECU",
+    "lat": -1.259076,
+    "lon": -78.188375
+  },
+  {
+    "code": "SLV",
+    "name": "El Salvador",
+    "mapCode": "SLV",
+    "lat": 13.685371,
+    "lon": -88.890124
+  },
+  {
+    "code": "GRD",
+    "name": "Grenada",
+    "mapCode": "GRD",
+    "lat": 12.113156,
+    "lon": -61.680461
+  },
+  {
+    "code": "GTM",
+    "name": "Guatemala",
+    "mapCode": "GTM",
+    "lat": 14.982133,
+    "lon": -90.497134
+  },
+  {
+    "code": "GUY",
+    "name": "Guyana",
+    "mapCode": "GUY",
+    "lat": 5.124317,
+    "lon": -58.942643
+  },
+  {
+    "code": "HTI",
+    "name": "Haiti",
+    "mapCode": "HTI",
+    "lat": 19.263784,
+    "lon": -72.224051
+  },
+  {
+    "code": "HND",
+    "name": "Honduras",
+    "mapCode": "HND",
+    "lat": 14.794801,
+    "lon": -86.887604
+  },
+  {
+    "code": "JAM",
+    "name": "Jamaica",
+    "mapCode": "JAM",
+    "lat": 18.137124,
+    "lon": -77.318767
+  },
+  {
+    "code": "MEX",
+    "name": "Mexico",
+    "mapCode": "MEX",
+    "lat": 23.919988,
+    "lon": -102.289448
+  },
+  {
+    "code": "NIC",
+    "name": "Nicaragua",
+    "mapCode": "NIC",
+    "lat": 12.670697,
+    "lon": -85.069347
+  },
+  {
+    "code": "PAN",
+    "name": "Panama",
+    "mapCode": "PAN",
+    "lat": 8.72198,
+    "lon": -80.352106
+  },
+  {
+    "code": "PRY",
+    "name": "Paraguay",
+    "mapCode": "PRY",
+    "lat": -21.674509,
+    "lon": -60.146394
+  },
+  {
+    "code": "PER",
+    "name": "Peru",
+    "mapCode": "PER",
+    "lat": -12.976679,
+    "lon": -72.90016
+  },
+  {
+    "code": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "mapCode": "KNA",
+    "lat": 17.336558,
+    "lon": -62.757975
+  },
+  {
+    "code": "LCA",
+    "name": "Saint Lucia",
+    "mapCode": "LCA",
+    "lat": 13.892371,
+    "lon": -60.980094
+  },
+  {
+    "code": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "mapCode": "VCT",
+    "lat": 13.0879,
+    "lon": -61.3359
+  },
+  {
+    "code": "SUR",
+    "name": "Suriname",
+    "mapCode": "SUR",
+    "lat": 4.143987,
+    "lon": -55.91094
+  },
+  {
+    "code": "BHS",
+    "name": "The Bahamas",
+    "mapCode": "BHS",
+    "lat": 26.401789,
+    "lon": -77.146688
+  },
+  {
+    "code": "TTO",
+    "name": "Trinidad and Tobago",
+    "mapCode": "TTO",
+    "lat": 10.9989,
+    "lon": -60.9184
+  },
+  {
+    "code": "URY",
+    "name": "Uruguay",
+    "mapCode": "URY",
+    "lat": -32.961127,
+    "lon": -55.966942
+  },
+  {
+    "code": "VEN",
+    "name": "Venezuela (Bolivarian Republic of)",
+    "mapCode": "VEN",
+    "lat": 7.182476,
+    "lon": -64.599381
+  },
+  {
+    "code": "CAN",
+    "name": "Canada",
+    "mapCode": "CAN",
+    "lat": 60.324287,
+    "lon": -101.9107
+  },
+  {
+    "code": "USA",
+    "name": "United States",
+    "mapCode": "USA",
+    "lat": 39.538479,
+    "lon": -97.482602
+  },
+  {
+    "code": "AUS",
+    "name": "Australia",
+    "mapCode": "AUS",
+    "lat": -24.129522,
+    "lon": 134.04972
+  },
+  {
+    "code": "FJI",
+    "name": "Fiji",
+    "mapCode": "FJI",
+    "lat": -17.826099,
+    "lon": 177.975427
+  },
+  {
+    "code": "KIR",
+    "name": "Kiribati",
+    "mapCode": "KIR",
+    "lat": 1.820437,
+    "lon": -157.384577
+  },
+  {
+    "code": "MHL",
+    "name": "Marshall Islands",
+    "mapCode": "MHL",
+    "lat": 7.082568,
+    "lon": 171.193609
+  },
+  {
+    "code": "FSM",
+    "name": "Micronesia (Federated States of)",
+    "mapCode": "FSM",
+    "lat": 6.887553,
+    "lon": 158.234019
+  },
+  {
+    "code": "NRU",
+    "name": "Naoero",
+    "mapCode": "NRU",
+    "lat": -0.520261,
+    "lon": 166.932644
+  },
+  {
+    "code": "NZL",
+    "name": "New Zealand",
+    "mapCode": "NZL",
+    "lat": -39.759,
+    "lon": 172.787
+  },
+  {
+    "code": "PLW",
+    "name": "Palau",
+    "mapCode": "PLW",
+    "lat": 7.518252,
+    "lon": 134.580157
+  },
+  {
+    "code": "PNG",
+    "name": "Papua New Guinea",
+    "mapCode": "PNG",
+    "lat": -5.695285,
+    "lon": 143.910216
+  },
+  {
+    "code": "WSM",
+    "name": "Samoa",
+    "mapCode": "WSM",
+    "lat": -13.639139,
+    "lon": -172.438241
+  },
+  {
+    "code": "SLB",
+    "name": "Solomon Islands",
+    "mapCode": "SLB",
+    "lat": -8.029548,
+    "lon": 159.170468
+  },
+  {
+    "code": "TON",
+    "name": "Tonga",
+    "mapCode": "TON",
+    "lat": -21.210026,
+    "lon": -175.163014
+  },
+  {
+    "code": "TUV",
+    "name": "Tuvalu",
+    "mapCode": "TUV",
+    "lat": -8.513717,
+    "lon": 179.209587
+  },
+  {
+    "code": "VUT",
+    "name": "Vanuatu",
+    "mapCode": "VUT",
+    "lat": -15.37153,
+    "lon": 166.908762
+  }
+]

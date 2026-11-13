@@ -1,0 +1,66 @@
+{
+  "release": "S012",
+  "sourceHashes": {
+    "events.json": "47c16bb4d9f7500dde1edc6690ea6b5961a06fc06188f8e5b2b13642617ae22c",
+    "structural_changes.json": "80371f947289a1f40a6ba780866512bd3b16a7d8cb66daa967463476b5a476f1",
+    "office_chains.json": "d8e5e944036b983d237ea0acca02bc9dc092635842f8a163f970eb4f8e8d7a0e",
+    "country_frame.json": "eef65db89bf952cc774266fb9d6a581eb92c652759a32a0d6a4778f3dbe5a10e",
+    "follow_up.json": "d5e680c66b4f4c25f58add66ccecf82398a68c8174bb0600b90161a2686e1aca",
+    "analysis.json": "93092df19b3fe721b0480dc5e511084ee4f4a51cae516bd22e01ce375cd4c5f0",
+    "inclusion_sensitivity.json": "820c240639d36eb9ffd3025760b39e6f5499adae565ad1c95f534e2d13fb70e9"
+  },
+  "counts": {
+    "release": "S012",
+    "windowStart": "2016-11-11",
+    "windowEnd": "2026-11-11",
+    "researchDate": "2026-11-13",
+    "totalHandovers": 686,
+    "totalCollectiveChanges": 105,
+    "countryCases": 197,
+    "fullWindowCases": 176,
+    "partialCases": 21,
+    "verifiedNoTransitionCases": 12,
+    "openQuestions": 43,
+    "heldCandidates": 2,
+    "rangedHandovers": 72,
+    "rangedCollectiveChanges": 21,
+    "officeChains": 362,
+    "relevantOfficeChains": 324,
+    "fullOfficeChains": 298,
+    "partialOfficeChains": 26,
+    "excludedOfficeChains": 38,
+    "dateFiltering": "A record with an uncertain date appears when its supported interval overlaps the selected period. It may appear in more than one monthly view, but counts once in the whole-period total. The interval does not describe how long the transition lasted.",
+    "nullMeaning": "An unidentified outgoing or incoming holder remains unknown. An empty field does not establish a vacancy or an empty collective body."
+  },
+  "files": {
+    "atlas.json": {
+      "bytes": 2385150,
+      "sha256": "2962e93dadad3bb5dc184f1acea6237df1352bfb21614001880f8b1a9f4a4425"
+    },
+    "methods.json": {
+      "bytes": 16049,
+      "sha256": "bc460c705004c086be8e3b5f3654a737f1dbf452497fb1dfe7e1387afa957d20"
+    },
+    "events.csv": {
+      "bytes": 496840,
+      "sha256": "5ab65c516cbad2b6442dd9c59bc9745765b8e451739532901d5e0c0fb96e8d02"
+    },
+    "collective-changes.csv": {
+      "bytes": 107986,
+      "sha256": "500f659e55661cb84c5eea9d31ec0e8c2f4b0e8544908a31153319d6eb47d2c8"
+    },
+    "coverage.csv": {
+      "bytes": 110835,
+      "sha256": "f3ea7af4509632533dfac47e51f2ef02ebc2d827a34885e3af6ec1ad31dd02db"
+    },
+    "open-questions.csv": {
+      "bytes": 95552,
+      "sha256": "3380ad79196e853b4d6628606e9aa9758d696bfd3e90482e386ac970864c3fe9"
+    }
+  },
+  "preservation": "Website projections use explicit field allowlists. The canonical source files are unchanged. Exact dates, interval bounds, nullable holders, stable IDs, direct sources, and verified source URLs are preserved. Three caveats replace an internal review-file path with the words 'an earlier source review'; no substantive caveat is removed.",
+  "reviewResults": {
+    "release": "S012",
+    "sha256": "9437c3a28cc5d06b4a352d7d3c44f9295e41509773e5ac8a838d7d8337cb3e35"
+  }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Explore verified political office and authority handovers, collective membership changes and country coverage, 2016–2026. A sourced historical atlas by Hugh Lamarque.">
+  <meta name="theme-color" content="#244e46">
+  <title>Political transitions · Global atlas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="analysis.css">
+  <script src="vendor/leaflet.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="map.js" defer></script>
+  <script src="analysis.js" defer></script>
+  <script src="coverage-notes.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="map">
+  <a class="skip-link" href="#explore-panel">Skip to records and filters</a>
+  <header class="masthead">
+    <div class="brand"><h1>Political transitions</h1><span class="brand-meta">Global atlas <span>2016–2026</span></span></div>
+    <label class="header-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span class="sr-only">Search the atlas</span><input id="search" type="search" placeholder="Search countries or leaders" autocomplete="off"></label>
+    <div class="header-credit">Mapping by Hugh Lamarque<span id="release-label">Research release</span></div>
+    <nav aria-label="Main navigation"><button data-page="map" class="active" aria-pressed="true">Map</button><button data-page="overview" aria-pressed="false">Overview</button><button data-page="analysis" aria-pressed="false">Analysis</button><button data-page="dataset" aria-pressed="false">Dataset</button></nav>
+  </header>
+  <main id="map-page" class="page map-page">
+    <div id="map" aria-label="World map of recorded political handovers"></div>
+    <div class="map-status" id="map-status">World · All recorded handovers</div>
+    <p class="map-hint">Select a country for its leadership sequence and sources.</p>
+    <button id="panel-toggle" class="panel-toggle" aria-controls="explore-panel" aria-expanded="false">Views &amp; records</button>
+    <aside id="explore-panel" class="sidebar" aria-label="Map views, filters and records">
+      <div class="panel-heading"><h2 id="panel-title">World</h2><button id="collapse-panel" class="icon-button" aria-label="Minimize views and records">−</button></div>
+      <div class="continent-tabs" role="group" aria-label="Continents"><button data-region="World" aria-pressed="true" class="active">World</button><button data-region="Africa" aria-pressed="false">Africa</button><button data-region="Europe" aria-pressed="false">Europe</button><button data-region="Asia" aria-pressed="false">Asia</button><button data-region="North America" aria-pressed="false">North America</button><button data-region="South America" aria-pressed="false">South America</button><button data-region="Oceania" aria-pressed="false">Oceania</button></div>
+      <label class="mobile-search"><span class="sr-only">Search countries or leaders</span><input id="mobile-search" type="search" placeholder="Search countries or leaders" autocomplete="off"></label>
+      <div class="panel-scroll">
+        <div class="section-top"><h3>Records</h3><button class="text-button" data-reset>Reset</button></div>
+        <label class="stack-field">Series <select id="series"><option value="handovers">Office &amp; authority handovers</option><option value="collective">Collective membership changes</option></select></label>
+        <label class="stack-field">Time view <select id="time-mode"><option value="all">All recorded changes · 2016–2026</option><option value="month">Selected month</option><option value="year">Selected year</option></select></label>
+        <details class="filters" id="filters"><summary>Filters &amp; definitions <span id="filter-count"></span></summary><div class="filter-fields">
+          <label>Subregion<select id="subregion"><option value="">All subregions</option></select></label>
+          <label>Mechanism <button class="help" type="button" data-help="mechanism" aria-label="About mechanism categories">?</button><select id="mechanism"><option value="">All mechanisms</option></select></label>
+          <label>Governing-group change <button class="help" type="button" data-help="group" aria-label="About governing-group change">?</button><select id="group"><option value="">All classifications</option><option value="yes">Change established</option><option value="no">Continuity established</option><option value="mixed">Mixed</option><option value="unclear">Unclear</option><option value="not_applicable">Not applicable</option></select></label>
+          <label>Research coverage<select id="coverage"><option value="">All researched cases</option><option value="full_window_verified">Full period checked</option><option value="partial_events_verified">Partial coverage</option></select></label>
+          <label>Date precision<select id="precision"><option value="">Exact dates &amp; intervals</option><option value="day">Exact day</option><option value="range">Date interval</option></select></label>
+          <label>Definition <button class="help" type="button" data-help="sensitivity" aria-label="About alternative definitions">?</button><select id="scenario"></select></label>
+        </div></details>
+        <div class="selection-chip" id="country-chip" hidden><span></span><button class="text-button" id="clear-country">Clear</button></div>
+        <div class="result-summary"><div><strong id="record-count">—</strong><span id="unit-label">handovers</span></div><span id="result-meta"></span></div>
+        <div class="results-actions"><button class="quiet" id="read-records">Read records</button><button class="quiet" data-export>Download CSV</button></div>
+        <p class="result-context" id="result-context">Loading the verified register…</p>
+        <div id="event-list" class="event-list" aria-live="polite"></div>
+        <button class="quiet load-more" id="show-more" hidden>Show more</button>
+      </div>
+      <details class="map-key" id="map-key" open><summary>Map key <button class="help" type="button" data-help="map" aria-label="About the map">?</button></summary><label class="key-mode">Colour by<select id="colour-by"><option value="mechanism" selected>Mechanism</option><option value="count">Number of records</option><option value="coverage">Research coverage</option></select></label><div id="legend"></div><p class="key-note" id="key-note"></p></details>
+      <footer class="panel-footer"><button id="fit-records" class="quiet">Fit records</button><button id="save-view" class="quiet">Save view</button><span>Mapping by Hugh Lamarque · <button class="text-button" data-cite>Cite</button> · <a href="https://lamarque-mapping.github.io/Border-Closure-Atlas/" target="_blank" rel="noopener">Border Closure Atlas ↗</a></span></footer>
+    </aside>
+    <div class="map-tools"><button id="labels-toggle" aria-pressed="false">Country labels</button><button id="key-toggle">Map key</button></div>
+    <div class="timeline">
+      <div class="timeline-controls"><button id="play" class="play-button" aria-label="Play timeline"><span aria-hidden="true">▶︎</span> <span id="play-text">Play timeline</span></button><button id="date-button" class="timeline-date" aria-haspopup="dialog">All years <span aria-hidden="true">⌄</span></button><input id="month-slider" type="range" min="0" max="120" value="0" step="1" aria-label="Selected month"><select id="speed" aria-label="Playback speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="8">8×</option></select><button id="previous" class="step-button" aria-label="Previous month">‹</button><button id="next" class="step-button" aria-label="Next month">›</button></div>
+      <div class="timeline-bottom"><span id="timeline-note">11 Nov 2016–11 Nov 2026 · Dates show changes of authority.</span><button class="text-button" data-cite>Cite</button></div>
+    </div>
+  </main>
+  <main id="overview-page" class="page reading-page" hidden><div id="overview-content"></div></main>
+  <main id="analysis-page" class="page reading-page" hidden>
+    <header class="reading-head"><div><p class="eyebrow">Patterns in the register</p><h2>Political handovers in perspective</h2><p>Explore the frequency, mechanisms and geography of recorded changes.</p></div><button class="quiet" data-navigate="map">Return to map →</button></header>
+    <div class="page-filterbar"><label>Series<select id="analysis-series"><option value="handovers">Office &amp; authority handovers</option><option value="collective">Collective membership changes</option></select></label><label>Continent<select id="analysis-region"></select></label><label>Definition<select id="analysis-scenario"></select></label><button class="quiet" data-reset>Reset filters</button></div>
+    <p class="active-filter-note" id="analysis-filters"></p><div id="analysis-content"></div>
+  </main>
+  <main id="dataset-page" class="page reading-page" hidden>
+    <header class="reading-head"><div><p class="eyebrow">Records, evidence &amp; downloads</p><h2>Explore the dataset</h2><p>Read the evidence for each recorded handover and collective membership change.</p></div><button class="quiet" data-navigate="map">Return to map →</button></header>
+    <div class="download-grid"><a href="data/events.csv" download><strong id="download-handovers">Handovers</strong><span>Full register · CSV ↓</span></a><a href="data/collective-changes.csv" download><strong id="download-collective">Collective changes</strong><span>Separate register · CSV ↓</span></a><a href="data/coverage.csv" download><strong id="download-cases">Geographic cases</strong><span>Research coverage · CSV ↓</span></a><a href="data/open-questions.csv" download><strong id="download-questions">Open questions</strong><span>Remaining evidence gaps · CSV ↓</span></a></div>
+    <div class="download-secondary"><a href="data/atlas.json" download>Complete website data · JSON ↓</a><a href="downloads/Political_Transitions_2016_2026.xlsx" download data-release-download>Research workbook · XLSX ↓</a><a href="downloads/Political_Transitions_Methodology_and_Findings.docx" download data-release-download>Methodology &amp; findings · DOCX ↓</a><a href="data/integrity.json" download data-release-download>Source &amp; export hashes · JSON ↓</a><a href="downloads/S012_EXECUTION_PROMPT.txt" download data-release-download>Executed prompt · S012 ↓</a><button class="text-button" data-navigate="overview">Read the methods</button></div>
+    <section class="data-browser"><div class="page-filterbar"><label>Series<select id="dataset-series"><option value="handovers">Office &amp; authority handovers</option><option value="collective">Collective membership changes</option></select></label><label class="grow">Search records<input id="dataset-search" type="search" placeholder="Country, leader, office or record ID"></label><label>Sort<select id="sort"><option value="newest">Latest first</option><option value="oldest">Earliest first</option><option value="country">Country A–Z</option></select></label><button class="quiet" data-export>Download matching CSV</button><button class="text-button" data-reset>Reset filters</button></div><p id="dataset-summary" class="active-filter-note"></p><div id="dataset-list"></div><div class="pagination"><button class="quiet" id="data-previous">← Previous</button><span id="data-page-label"></span><button class="quiet" id="data-next">Next →</button></div></section>
+    <section class="coverage-section"><div class="section-top"><h3>Country coverage</h3><label>Show<select id="coverage-view"><option value="all">All cases</option><option value="partial">Partial cases</option><option value="none">Verified no-transition cases</option></select></label></div><p>Coverage describes the whole study period. A filtered view can show zero records even when transitions occurred at other times.</p><div id="coverage-list" class="coverage-list"></div></section>
+  </main>
+  <dialog id="country-dialog" class="country-dialog" aria-labelledby="country-title"><header class="dialog-head"><div><p class="eyebrow" id="country-subtitle"></p><h2 id="country-title"></h2></div><button class="icon-button" data-close aria-label="Close country details">×</button></header><div class="country-intro" id="country-intro"></div><nav class="country-tabs" aria-label="Country detail sections"><button data-country-tab="handovers">Handovers</button><button data-country-tab="collective">Collective changes</button><button data-country-tab="coverage">Coverage &amp; sources</button></nav><div id="country-body" class="dialog-body"></div></dialog>
+  <dialog id="record-dialog" class="record-dialog" aria-labelledby="record-title"><header class="dialog-head"><div><p id="record-subtitle" class="eyebrow"></p><h2 id="record-title"></h2></div><button class="icon-button" data-close aria-label="Close record">×</button></header><div id="record-body" class="dialog-body"></div></dialog>
+  <dialog id="date-dialog" class="small-dialog" aria-labelledby="date-title"><header class="dialog-head"><h2 id="date-title">Choose a period</h2><button class="icon-button" data-close aria-label="Close period selector">×</button></header><form id="date-form"><div class="date-fields"><label>Year<select id="date-year"></select></label><label>Month<select id="date-month"></select></label></div><p>11 November 2016–11 November 2026</p><button type="submit" class="primary">View month</button><button type="button" class="quiet" id="all-years">Show all years</button></form></dialog>
+  <dialog id="help-dialog" class="small-dialog" aria-labelledby="help-title"><header class="dialog-head"><h2 id="help-title"></h2><button class="icon-button" data-close aria-label="Close explanation">×</button></header><div id="help-body" class="dialog-body"></div></dialog>
+  <div id="loading" class="loading-panel" role="status"><span class="loading-dot"></span><h2>Opening the atlas</h2><p>Loading the map and verified register.</p></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><div class="noscript">Enable JavaScript to explore the atlas. The <a href="data/events.csv">handover register</a> and <a href="data/collective-changes.csv">collective register</a> are also available as CSV downloads.</div></noscript>
+</body>
+</html>
