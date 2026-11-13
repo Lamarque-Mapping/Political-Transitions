@@ -1,16 +1,16 @@
 {
-  "release": "S012",
+  "release": "S013",
   "sourceHashes": {
     "events.json": "47c16bb4d9f7500dde1edc6690ea6b5961a06fc06188f8e5b2b13642617ae22c",
-    "structural_changes.json": "80371f947289a1f40a6ba780866512bd3b16a7d8cb66daa967463476b5a476f1",
-    "office_chains.json": "d8e5e944036b983d237ea0acca02bc9dc092635842f8a163f970eb4f8e8d7a0e",
-    "country_frame.json": "eef65db89bf952cc774266fb9d6a581eb92c652759a32a0d6a4778f3dbe5a10e",
-    "follow_up.json": "d5e680c66b4f4c25f58add66ccecf82398a68c8174bb0600b90161a2686e1aca",
-    "analysis.json": "93092df19b3fe721b0480dc5e511084ee4f4a51cae516bd22e01ce375cd4c5f0",
+    "structural_changes.json": "84b7cf0b6d3fffddf44c26a980532dcd0cf1aff66ecf1a8b185ce9c1b7901c02",
+    "office_chains.json": "245db2a1229f997769aa6be1cf89531f5c34050643fd2bdcbbd535b17b194c33",
+    "country_frame.json": "e2a370668e49b4d81bbb5685813b849dfde24fa967c2c0e0ed81dfa079a84a88",
+    "follow_up.json": "fa8fd4ab642d0e40db9efc8d82760a2c59a065ec95f3f1c6f2abf62be3197ef1",
+    "analysis.json": "259f41233e2357b6ec6389b19dc026c32003c28a640786c98e5bffa597fcc85b",
     "inclusion_sensitivity.json": "820c240639d36eb9ffd3025760b39e6f5499adae565ad1c95f534e2d13fb70e9"
   },
   "counts": {
-    "release": "S012",
+    "release": "S013",
     "windowStart": "2016-11-11",
     "windowEnd": "2026-11-11",
     "researchDate": "2026-11-13",
@@ -34,33 +34,33 @@
   },
   "files": {
     "atlas.json": {
-      "bytes": 2385150,
-      "sha256": "2962e93dadad3bb5dc184f1acea6237df1352bfb21614001880f8b1a9f4a4425"
+      "bytes": 2393485,
+      "sha256": "9ebe0837f538e17c4bf09aff2d5b87f1c3c75ce468db3a004b7f0bc7e1c7d6db"
     },
     "methods.json": {
-      "bytes": 16049,
-      "sha256": "bc460c705004c086be8e3b5f3654a737f1dbf452497fb1dfe7e1387afa957d20"
+      "bytes": 16097,
+      "sha256": "7504a310db0f9e71ff7528eefa361ed59ec65378dab11fc30b018a8210d47e54"
     },
     "events.csv": {
       "bytes": 496840,
       "sha256": "5ab65c516cbad2b6442dd9c59bc9745765b8e451739532901d5e0c0fb96e8d02"
     },
     "collective-changes.csv": {
-      "bytes": 107986,
-      "sha256": "500f659e55661cb84c5eea9d31ec0e8c2f4b0e8544908a31153319d6eb47d2c8"
+      "bytes": 108786,
+      "sha256": "313c855ace91d4a6ad53d7caf89e42cd22e028b74d80d6430fa81666c525b9b0"
     },
     "coverage.csv": {
-      "bytes": 110835,
-      "sha256": "f3ea7af4509632533dfac47e51f2ef02ebc2d827a34885e3af6ec1ad31dd02db"
+      "bytes": 110971,
+      "sha256": "b19cab9ffe72d9697a87cec4d0ec0dab12bbede5222674ca07f2f46b2075ade8"
     },
     "open-questions.csv": {
-      "bytes": 95552,
-      "sha256": "3380ad79196e853b4d6628606e9aa9758d696bfd3e90482e386ac970864c3fe9"
+      "bytes": 100935,
+      "sha256": "951ad54990bafed5328819357fc17638ba226b9335ea2e0720d1087e60a9ac77"
     }
   },
   "preservation": "Website projections use explicit field allowlists. The canonical source files are unchanged. Exact dates, interval bounds, nullable holders, stable IDs, direct sources, and verified source URLs are preserved. Three caveats replace an internal review-file path with the words 'an earlier source review'; no substantive caveat is removed.",
   "reviewResults": {
-    "release": "S012",
-    "sha256": "9437c3a28cc5d06b4a352d7d3c44f9295e41509773e5ac8a838d7d8337cb3e35"
+    "release": "S013",
+    "sha256": "3ab79d93b447ba846e773f12d9dc09c8f4f6bdce31d333ea0dad245636a1fca2"
   }
 }

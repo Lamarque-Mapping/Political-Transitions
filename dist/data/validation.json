@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "release": "S012",
+  "release": "S013",
   "checks": [
     "Export hashes and byte lengths",
     "Separate units, stable IDs and country references",
@@ -8,7 +8,8 @@
     "Country coverage, no-transition flags, chain totals and open questions",
     "Annual counts keep cross-year intervals unassigned",
     "Sensitivity alternatives reconcile by stable-ID set subtraction",
-    "CSV downloads preserve record counts and source URLs"
+    "CSV downloads preserve record counts and source URLs",
+    "Canonical hashes, all critical record fields and every direct/verified source URL preserved"
   ],
   "counts": {
     "handovers": 686,

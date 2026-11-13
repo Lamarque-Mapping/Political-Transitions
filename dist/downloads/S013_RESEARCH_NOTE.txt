@@ -1,0 +1,27 @@
+POLITICAL TRANSITIONS — S013 RESEARCH NOTE
+13 November 2026
+Event window: 11 November 2016 to 11 November 2026
+
+S013 makes targeted evidence checks in 13 of the 21 countries with incomplete coverage. Five evidence updates received separate-agent source review. No handover, collective change, country upgrade or question closure is supported. The register remains at 686 handovers and 105 collective changes, with full-period coverage for 176 of 197 countries and 21 partial cases.
+
+Comoros: the secretary-general is observed on school-site visits on 4–5 November 2026 in a report published on 6 November. The latest holder observation moves from 16 October to 5 November. Earlier powers, substitutions and continuation through the cutoff remain unresolved.
+
+Chad: added original MNJTF and contemporary press observations for fuller commander names. The sources do not prove that Mallou, Malim and Ali identify one person. The canonical incoming short name, May 2021 date range and count are retained.
+
+Georgia: added a contemporaneous report that government orders were missing from the online archive in February 2024. This explains a retrieval obstacle but identifies no acting premier and establishes no vacancy.
+
+Zimbabwe: authenticated the original Crisis Group briefing through Refworld. Continued military involvement after the November 2017 inauguration prevents treating inauguration alone as an authority endpoint; no separately countable unit or precise transfer is established.
+
+South Sudan: verified official catalogue entries for three constitutional amendments as retrieval leads. The act bodies were not obtained, so no oath rule, legal date or membership change is inferred.
+
+The other targeted searches produced no sufficiently supported new record or coverage upgrade. All existing event dates, mechanism classifications and partial-coverage labels are retained.
+
+LIMITATIONS
+- Targeted searches in 13 countries are not a fresh reconstruction of every office sequence or an audit of all 21 partial countries.
+- Five adopted evidence proposals received separate-agent review. Unchanged records retain their earlier verification.
+- Official catalogue leads are explicitly distinguished from retrieved legal text. Missing online documents do not establish absent legal acts or vacant offices.
+
+INTERFACE
+The Overview page now links directly to the annual mechanisms graph in Analysis. Country map tooltips use readable widths and structured mechanism rows. These interface changes do not alter record selection or the meaning of map colours.
+
+Research audit: batches/S013 in Political_Transitions_Working_Dataset.zip. Counts and sources are also available in the map’s Dataset downloads.

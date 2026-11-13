@@ -1,0 +1,115 @@
+{
+  "batch_id": "S013",
+  "reviewer_id": "/root/gap_research_b",
+  "review_date": "2026-11-13",
+  "decision": "approved_evidence_only_integration",
+  "corrections_required": [],
+  "scope": "Independent audit of integrated canonical data against retained S012 baseline, five approved evidence proposals and RESULTS/CHANGES. This is not a new substantive audit of every country or a publication/rendering approval.",
+  "baseline_verified": "All seven baseline JSON files match the original S012 canonical data in /workspace/scratch/2156dff2064f/transitions_work_s012/political_transitions/data.",
+  "change_log": {
+    "approved_proposals": 5,
+    "changed_records": 11,
+    "changed_record_counts": {
+      "country_frame": 1,
+      "office_chains": 1,
+      "structural_changes": 1,
+      "follow_up": 8
+    },
+    "result": "All changes match CHANGES before/after values and appended history. No unlogged record edits; prior histories and source objects remain intact."
+  },
+  "invariants": {
+    "events": "686 records byte-identical to baseline.",
+    "events_sha256": "47c16bb4d9f7500dde1edc6690ea6b5961a06fc06188f8e5b2b13642617ae22c",
+    "collective_changes": "105 records retained. Only SC-000064 differs, in sources, verified_source_urls, caveats and appended update_history; all member and date fields unchanged.",
+    "countries": {
+      "full_window_verified": 176,
+      "partial_events_verified": 21
+    },
+    "chains": {
+      "full_window_verified": 298,
+      "partial_events_verified": 26,
+      "excluded_scope": 38
+    },
+    "follow_up": "All 156 case IDs and statuses retained, including 43 open; no closure.",
+    "analysis": "Only release changes from S012 to S013; all statistics unchanged.",
+    "sensitivity": "Unchanged.",
+    "derived_csvs": "All 4 derived CSV files byte-identical to S012.",
+    "sources": "Every pre-existing source object, source URL and source date is retained in its original changed record; approved new evidence is appended."
+  },
+  "proposal_checks": [
+    {
+      "country_code": "COM",
+      "proposal_id": "S013-COM-SGG-HOLDER-OBSERVATION",
+      "decision": "pass",
+      "finding": "SGG observation is 5 November 2026; source publication remains 6 November and source observations are 4–5 November. Country maximum stays 6 November. The office chain and both follow-up cases retain earlier-power, intervening-sequence and cutoff gaps; no continuous-tenure inference."
+    },
+    {
+      "country_code": "TCD",
+      "proposal_id": "S013-TCD-COMMANDER-IDENTITY-EVIDENCE",
+      "decision": "pass",
+      "finding": "SC-000064 retains incoming Mahamat Souleymane, outgoing Souleyman Abakar Adoum, null point date and 1–31 May 2021 range. Mallou, Malim and Ali remain separately attributed name observations without a merge or added membership event. Three approved URLs are appended to the event and membership follow-up."
+    },
+    {
+      "country_code": "GEO",
+      "proposal_id": "S013-A-GEO-ARCHIVE-LIMITATION",
+      "decision": "pass",
+      "finding": "Both target cases attribute the archive observation to 14 February 2024. The new Radio Tavisupleba URL is present; text explicitly avoids identifying an acting PM, proving vacancy or treating the report as a current exhaustive archive audit."
+    },
+    {
+      "country_code": "ZWE",
+      "proposal_id": "S013-A-ZWE-CONTINUING-MILITARY-ROLE",
+      "decision": "pass",
+      "finding": "Both target cases use the verified Refworld catalogue and ICG PDF, properly attribute the analysis to ICG, retain the unit/endpoint question and infer no new accession, roster or date. No S013 Zimbabwe staging URL was introduced."
+    },
+    {
+      "country_code": "SSD",
+      "proposal_id": "S013-C-SSD-NEC-AMENDMENT-CATALOGUE-LEADS",
+      "decision": "pass",
+      "finding": "All three official NEC URLs are appended as retrieval_lead_only, with null published_date. Text expressly states that act bodies were not recovered and catalogue timestamps are not legal dates; no oath, operative-membership or commencement rule is asserted."
+    }
+  ],
+  "research_scope": {
+    "country_count": 13,
+    "country_codes": [
+      "BGD",
+      "COM",
+      "DZA",
+      "GEO",
+      "GIN",
+      "GNB",
+      "MDG",
+      "SRB",
+      "SSD",
+      "SYR",
+      "TCD",
+      "YEM",
+      "ZWE"
+    ],
+    "packet_mapping": {
+      "research_a": [
+        "GEO",
+        "SRB",
+        "BGD",
+        "DZA",
+        "ZWE"
+      ],
+      "research_b": [
+        "SYR",
+        "MDG",
+        "TCD",
+        "GNB",
+        "GIN"
+      ],
+      "research_c": [
+        "SSD"
+      ],
+      "root_research": [
+        "COM",
+        "YEM"
+      ]
+    },
+    "result": "The RESULTS country list exactly matches the union of researcher packets. Its conclusion, limitations and workbook checkpoint describe targeted evidence questions, not a fresh reconstruction of all office sequences or an audit of all 21 partial countries. Five countries received approved evidence updates."
+  },
+  "out_of_scope_observation": "Existing Cambodia Crisis Group staging references predate S013 and are untouched; the new Zimbabwe proposal uses only the independently verified Refworld URLs.",
+  "canonical_files_edited_by_reviewer": false
+}

@@ -1,6 +1,6 @@
 # Political Transitions Atlas
 
-An interactive, source-linked atlas of **office and governing-authority handovers** and **separately counted collective membership changes**, covering the fixed geographic frame from **11 November 2016 through 11 November 2026**. Research release **S012**, frozen 13 November 2026. Release totals, country coverage and definition alternatives are read from the canonical export rather than duplicated in the interface.
+An interactive, source-linked atlas of **office and governing-authority handovers** and **separately counted collective membership changes**, covering the fixed geographic frame from **11 November 2016 through 11 November 2026**. Research release **S013**, frozen 13 November 2026. Release totals, country coverage and definition alternatives are read from the canonical export rather than duplicated in the interface.
 
 The map opens with **Mechanism** as its default view. Countries with multiple represented mechanisms use equal-width stripes: each stripe indicates a mechanism's presence, without frequency weighting. Explicit shared links can select another view; Reset restores the mechanism view.
 
@@ -19,15 +19,15 @@ The deployable site is in `dist/`. It is buildless HTML, CSS and JavaScript, wit
 - `app.js`: navigation, filters, chronology and source evidence dialogs.
 - `data/atlas.json`: allowlisted website export of the frozen register, preserving stable IDs, supported date intervals, country coverage, sources, office sequences and open questions.
 - `data/methods.json`: public methodology copy, with release-specific figures and review findings generated from the same source.
-- `downloads/`: the completed research workbook, methodology report and the written S012 execution prompt.
+- `downloads/`: the completed research workbook, methodology report and the S013 research note and earlier execution prompts.
 
 ## Data rules
 
-The S012 register contains **686 office and authority handovers** and **105 collective membership changes**, kept as separate counting units. The published mechanism classifications remain those of S012. A range represents uncertainty about an event date, not a transition continuing throughout that interval. Monthly selections use inclusive interval overlap, so the same ranged record may appear in multiple months while counting once in the full register.
+The S013 register contains **686 office and authority handovers** and **105 collective membership changes**, kept as separate counting units. The mechanism classifications are unchanged from S012. A range represents uncertainty about an event date, not a transition continuing throughout that interval. Monthly selections use inclusive interval overlap, so the same ranged record may appear in multiple months while counting once in the full register.
 
-Annual bars and mechanism lines include only records whose supported dates lie in a single calendar year. The mechanism comparison uses raw annual counts, the map's fixed colours and the same filtered records as the other Analysis views. All represented mechanisms are shown initially; visibility controls and an exact-values table support comparison. Records whose intervals span calendar years are shown separately, with totals reconciled against the full register. 2016 and 2026 are marked as partial observation years. Unknown holders or members are never treated as an empty office or body.
+Annual bars and mechanism lines include only records whose supported dates lie in a single calendar year. The mechanism comparison uses raw annual counts, the map's fixed colours and the same filtered records as the other Analysis views. A “Mechanisms over time” shortcut on Overview opens the Analysis line graph. All represented mechanisms are shown initially; visibility controls and an exact-values table support comparison. Records whose intervals span calendar years are shown separately, with totals reconciled against the full register. 2016 and 2026 are marked as partial observation years. Unknown holders or members are never treated as an empty office or body.
 
-Country coverage distinguishes fully checked sequences from cases with specified evidence or scope gaps. Supported no-transition findings are separate from filtered zero counts. Open questions and held candidates are different registers, and held candidates are excluded from the admitted series. The S012 pass revisited all 21 previously partial countries and 26 partial office sequences. It adds one office or authority transfer and two collective membership changes, with separate source review of 35 adopted proposals. Coverage is complete for 176 countries; 21 retain explicit evidence gaps.
+Country coverage distinguishes fully checked sequences from cases with specified evidence or scope gaps. Supported no-transition findings are separate from filtered zero counts. Open questions and held candidates are different registers, and held candidates are excluded from the admitted series. The S013 pass made targeted evidence checks in 13 of the 21 partial countries. Five evidence updates received separate-agent source review: a later Comoros holder observation, attributed Chad commander names, a dated Georgia archive limitation, Zimbabwe military-authority context and South Sudan legal-text retrieval leads. It adds no handovers, collective changes, country upgrades or question closures. Coverage is complete for 176 countries; 21 retain explicit evidence gaps.
 
 The six definition choices exclude explicit stable-ID sets. They are scope choices rather than completeness bounds. All filters, charts and matching CSV exports apply the same record-selection functions. Country history dialogs intentionally show the full adopted country sequence and explain that scope.
 
@@ -50,7 +50,7 @@ node scripts/check-site-data.js
 The export generator preserves the canonical dataset and can regenerate the allowlisted website data from a supplied source directory:
 
 ```sh
-python3 scripts/export-data.py --source /path/to/political_transitions/data --expect-release S012
+python3 scripts/export-data.py --source /path/to/political_transitions/data --expect-release S013
 python3 scripts/check-data.py --source /path/to/political_transitions/data
 ```
 

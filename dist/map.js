@@ -26,7 +26,7 @@
   const isPartial=c=>String(c?.coverage_status||c?.coverage||'').startsWith('partial');
   const isFull=c=>String(c?.coverage_status||c?.coverage||'').startsWith('full');
   const compact=()=>window.matchMedia('(max-width:760px), (max-width:950px) and (max-height:500px)').matches;
-  let map,geography,countryLayer,labelPane,microLayer,callback,resizeFrame,pendingView=null,selectedRegion='World',labelVisible=false;
+  let map,geography,countryLayer,labelPane,microLayer,callback,resizeFrame,tooltipFrame,activeTooltip,pendingView=null,selectedRegion='World',labelVisible=false;
   let countries=new Map(),features=new Map(),counts=new Map(),recordsByCountry=new Map(),microMarkers=new Map();
   let current={records:[],colourBy:'mechanism',series:'handovers',selectedCountry:null};
   const mechanismOrder=Object.keys(mechanisms).filter(key=>key!=='multiple'),patternCache=new Map();
@@ -66,8 +66,41 @@
     if(!c)return '';
     let note=isPartial(c)?'Partial coverage':isFull(c)?'Full window checked':'Coverage under review';
     if(!n&&c.no_transition_verified)note+=' · no eligible handover found in the full study window';
-    const mechanism=current.colourBy==='mechanism'&&n?'<span class="map-tip-meta">'+escape(mechanismLabel(code))+'</span>':'';
+    const mechanism=current.colourBy==='mechanism'&&n?'<ul class="map-tip-mechanisms" aria-label="Mechanisms in selection">'+mechanismKeys(code).map(key=>'<li><span class="map-tip-swatch" style="background:'+mechanisms[key].colour+'" aria-hidden="true"></span>'+escape(mechanisms[key].label)+'</li>').join('')+'</ul>':'';
     return '<strong class="map-tip-title">'+escape(countryName(c))+'</strong><span class="map-tip-meta">'+n+' '+seriesLabel(n)+' in selection</span>'+mechanism+'<span class="map-tip-meta">'+escape(note)+'</span><span class="map-tip-hint">Select for records and sources →</span>';
+  }
+  function positionTooltip(tip=activeTooltip){
+    if(!map||!tip?.isOpen())return;
+    const el=tip.getElement(),r=map.getContainer().getBoundingClientRect(),viewport=window.visualViewport;
+    if(!el)return;
+    // Leaflet's positioning pane has no width. Give the card a real width,
+    // then fit it inside both the map and the visible browser viewport.
+    const vx=viewport?.offsetLeft||0,vy=viewport?.offsetTop||0,margin=10,gap=14;
+    const left=Math.max(r.left,vx)+margin,top=Math.max(r.top,vy)+margin;
+    const right=Math.min(r.right,vx+(viewport?.width||document.documentElement.clientWidth))-margin;
+    const bottom=Math.min(r.bottom,vy+(viewport?.height||window.innerHeight))-margin;
+    if(right<=left||bottom<=top){tip.close();return;}
+    el.style.width=Math.min(300,right-left)+'px';
+    const width=el.offsetWidth,height=el.offsetHeight;
+    // A very short map still opens the full country details on selection.
+    // Do not show a clipped, unreadable hover card when none can fit.
+    if(height>bottom-top){tip.close();return;}
+    const anchor=map.latLngToContainerPoint(tip.getLatLng()),x=r.left+anchor.x,y=r.top+anchor.y;
+    const above=y-gap-height,below=y+gap;
+    const preferredTop=above>=top?above:below+height<=bottom?below:above;
+    const cardTop=Math.max(top,Math.min(preferredTop,bottom-height));
+    const cardLeft=Math.max(left,Math.min(x-width/2,right-width));
+    L.DomUtil.setPosition(el,map.containerPointToLayerPoint([cardLeft-r.left,cardTop-r.top]));
+  }
+  function scheduleTooltipPosition(){
+    cancelAnimationFrame(tooltipFrame);
+    const tip=activeTooltip;
+    tooltipFrame=requestAnimationFrame(()=>{tooltipFrame=null;if(tip===activeTooltip)positionTooltip(tip);});
+  }
+  function bindCountryTooltip(layer,code,sticky=false){
+    layer.bindTooltip(tooltip(code),{direction:'center',sticky,opacity:1,className:'atlas-country-tooltip'});
+    layer.on('mousemove',()=>positionTooltip(layer.getTooltip()));
+    layer.on('move',scheduleTooltipPosition);
   }
   function visibleRect(selector){
     for(const el of document.querySelectorAll(selector)){
@@ -107,7 +140,7 @@
     if(!points.length){setRegion(selectedRegion);return;}
     map.fitBounds(L.latLngBounds(points),{...padding(),maxZoom:codes.length===1?5:6,animate:false});
   }
-  function select(code){if(countries.has(code)&&callback)callback(code);}
+  function select(code){if(activeTooltip)activeTooltip.close();if(countries.has(code)&&callback)callback(code);}
   function markerIcon(code){
     const s=styleFor(code),colours=stripeColours(code),size=markerSize(code,colours),background=colours.length>1?stripeGradient(colours,(size-3)/colours.length):s.fillColor;
     return L.divIcon({className:'atlas-country-marker',iconSize:[24,24],iconAnchor:[12,12],html:'<span style="display:block;width:'+size+'px;height:'+size+'px;margin:'+(24-size)/2+'px;border:1.4px solid '+s.color+';border-radius:50%;background:'+background+';box-shadow:0 0 0 1px #fff" aria-hidden="true"></span>',tooltipAnchor:[0,-9]});
@@ -162,7 +195,7 @@
     current={...current,...options};counts=new Map();recordsByCountry=new Map();
     for(const r of current.records||[]){const code=countryCode(r);counts.set(code,(counts.get(code)||0)+1);if(!recordsByCountry.has(code))recordsByCountry.set(code,[]);recordsByCountry.get(code).push(r);}
     if(countryLayer)countryLayer.eachLayer(layer=>{const code=featureCode(layer.feature);layer.setStyle(styleFor(code));if(layer.getTooltip())layer.setTooltipContent(tooltip(code));});
-    renderMicro();renderLabels();
+    renderMicro();renderLabels();positionTooltip();
   }
   function invalidate(){
     if(!map)return;cancelAnimationFrame(resizeFrame);
@@ -170,7 +203,7 @@
       if(!hasMapSize())return;
       map.invalidateSize({animate:false,pan:false});
       if(pendingView)pendingView();
-      renderLabels();
+      renderLabels();positionTooltip();
     });
   }
 
@@ -181,12 +214,25 @@
     if(!geography.countries?.features?.length)throw Error('Map geography is missing.');
     map=L.map('map',{preferCanvas:true,zoomControl:false,attributionControl:true,worldCopyJump:false,minZoom:.25,maxZoom:14,zoomSnap:.25,scrollWheelZoom:true}).setView([17,5],2);
     map.getContainer().style.background=P.ocean;
+    map.on('tooltipopen',e=>{
+      activeTooltip=e.tooltip;
+      // A focused or reopened marker can run Leaflet's layout again without
+      // another tooltipopen event. contentupdate precedes its final position.
+      activeTooltip.off('contentupdate',scheduleTooltipPosition);
+      activeTooltip.on('contentupdate',scheduleTooltipPosition);
+      positionTooltip();scheduleTooltipPosition();
+    });
+    map.on('tooltipclose',e=>{
+      e.tooltip.off('contentupdate',scheduleTooltipPosition);
+      if(activeTooltip===e.tooltip){activeTooltip=null;cancelAnimationFrame(tooltipFrame);tooltipFrame=null;}
+    });
+    map.on('movestart zoomstart',()=>{if(activeTooltip)activeTooltip.close();});
     L.control.zoom({position:'topleft'}).addTo(map);
     map.attributionControl.setPrefix('<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>');
     map.attributionControl.addAttribution('Reference geography: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>');
     const renderer=L.canvas({padding:.35});
     countryLayer=L.geoJSON(geography.countries,{renderer,style:f=>styleFor(featureCode(f)),onEachFeature(f,layer){
-      const code=featureCode(f);if(countries.has(code)){features.set(code,f);layer.bindTooltip(tooltip(code),{direction:'top',sticky:true,opacity:1,className:'atlas-country-tooltip'});layer.on('click',()=>select(code));layer.on('mouseover',()=>layer.setStyle({weight:2,color:P.ink}));layer.on('mouseout',()=>layer.setStyle(styleFor(code)));}
+      const code=featureCode(f);if(countries.has(code)){features.set(code,f);bindCountryTooltip(layer,code,true);layer.on('click',()=>select(code));layer.on('mouseover',()=>layer.setStyle({weight:2,color:P.ink}));layer.on('mouseout',()=>layer.setStyle(styleFor(code)));}
     }}).addTo(map);
     map.createPane('referenceBoundaries');map.getPane('referenceBoundaries').style.zIndex=410;map.getPane('referenceBoundaries').style.pointerEvents='none';
     const referenceRenderer=L.canvas({pane:'referenceBoundaries',padding:.35});
@@ -198,7 +244,7 @@
     for(const code of microCodes){
       const f=features.get(code),p=f?.properties;if(!p)continue;
       const marker=L.marker([p.LABEL_Y,p.LABEL_X],{icon:markerIcon(code),keyboard:true,title:countryName(countries.get(code)),riseOnHover:true}).addTo(microLayer);
-      marker.bindTooltip(tooltip(code),{direction:'top',opacity:1});marker.on('click',()=>select(code));
+      bindCountryTooltip(marker,code);marker.on('click',()=>select(code));
       const el=marker.getElement();if(el)el.addEventListener('keydown',e=>{if(e.key===' '){e.preventDefault();select(code);}});
       microMarkers.set(code,marker);
     }
